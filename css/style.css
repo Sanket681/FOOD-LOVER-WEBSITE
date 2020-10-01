@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+/* header */
+.header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(41,40,45),rgba(48,47,52,0.9)), url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+}
+.nav-item a{
+    font-weight: bold !important;
+    padding: 0 20px !important;
+    color: white !important;
+    font-size: 1.2rem;
+}
+.nav-item a:hover , .active a{
+    color: rgb(215, 159, 85) !important;
+}
+.banner-title , .banner {
+  padding: 10px 15px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.banner-title h1{
+    font-size: 3.5rem;
+    margin-top: 110px;
+    padding: 20px 0;
+    font-weight: bolder;
+    color: rgb(229, 142, 0);    
+}
+.banner-title p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    padding: 10px 0;
+}
+.banner-title a {
+    text-decoration: none;
+    padding: 20px 30px;
+    background: rgb(229, 142, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(57, 39, 15);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    
+}
+.banner-title a:hover{
+    background-color:rgb(229, 142, 0,0.9) ;
+    color:rgb(59, 14, 18) ;
+    text-decoration: none;
+}
+
+/* ABOUT */
+
+.about , .gallery , .menu{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(30, 29, 35);
+    padding: 50px 0px;
+}
+.about-img img:hover,.gallery-img img:hover, .menu-items img:hover{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.about-desc h2{
+    color:rgb(251, 251, 251);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 30px 0;
+}
+.about-desc h2::after{
+    content: " ";
+    display: block;
+    background-color: rgb(229, 142, 0);
+    height: 3px;
+    width: 150px;
+    margin: 15px 0px;
+}
+.about-desc p{
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+
+/* Gallery */
+
+.gallery-heading h2 , .menu-heading h2{
+    color:rgb(251, 251, 251);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 30px 0;
+    text-align: center;
+}
+.gallery-heading h2::after , .menu-heading h2::after{
+    content: " ";
+    display: block;
+    background-color: rgb(229, 142, 0);
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 15px;
+}
+.gallery-img{
+    padding: 25px 10px;
+    margin: 10px 0px;
+}
+.gallery-img img{
+    height: 450px;
+    width: 400px;
+    padding: 20px;
+}
+
+/* MENU */
+
+.menu-items{
+    padding: 20px;
+    margin-top: 5px;
+}
+.menu-items img{
+    height: 350px;
+    width: 350px;
+    padding: 20px 15px;
+    margin: 2px;
+}
+.menu-items h3{
+    color:rgb(220,144,9);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 15px 0;
+    padding: 0px 15px;
+    
+}
+.menu-items p{
+    color: rgb(251, 251, 251);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0px 15px;
+}
+
+/* CONTACT */
+
+.contact{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(229, 142, 0);
+    padding: 50px 0px;
+    padding-bottom: 80px;
+}
+.contact-heading h2{
+    color:rgb(251, 251, 251);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 30px 0;
+    text-align: center;
+}
+.contact-heading h2::after{
+    content: " ";
+    display: block;
+    background-color: rgb(30, 29, 35);
+    height: 3px;
+    width: 150px;
+    margin: 15px auto 15px;
+}
+.container-send{
+    display: flex;
+    justify-content: center;
+}
+.container-send .btn{
+    background-color: rgb(54, 53, 59);
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.5rem;
+    font-weight: bolder;   
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.container-send .btn:hover{
+    background-color: rgb(54, 53, 59,0.95);
+}
+
+/* FOOTER */
+
+.footer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: rgb(54, 53, 59);
+    padding-top: 50px;
+}
+.footer-logo , .footer .row{
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 400px;
+    height: 100%;
+    padding: 0px 35px;
+}
+.footer .row i{
+    color: rgb(251, 251, 251,0.7) !important;
+    padding: 5px 10px !important;
+}
+.footer .row i:hover{
+    color: rgb(251, 251, 251) !important;
+    cursor: pointer;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+.copyright p{
+    color: white;
+    margin-top: 25px;
+    padding-top: 25px;
+    font-size: 1.1rem;
+}
